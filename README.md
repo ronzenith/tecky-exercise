@@ -74,6 +74,7 @@ print(df.groupby(['label'])['text'].count())
 df.groupby(['label'])['text'].count().plot(kind='bar')
 plt.show()
 ```
+![image](https://user-images.githubusercontent.com/10076889/219705746-0d63486e-f1f9-40e4-9967-2582a9a6075f.png)
 
 For the fake news sub-dataset:
 ```
@@ -86,6 +87,8 @@ plt.imshow(wordcloud, interpolation = 'bilinear')
 plt.axis('off')
 plt.show()
 ```
+![image](https://user-images.githubusercontent.com/10076889/219705841-859458c5-ed77-456e-adc8-8ab9d7c38c3b.png)
+
 
 For the real news sub-dataset:
 ```
@@ -97,6 +100,8 @@ plt.imshow(wordcloud, interpolation = 'bilinear')
 plt.axis('off')
 plt.show()
 ```
+![image](https://user-images.githubusercontent.com/10076889/219705878-04830ef7-4354-42d8-aa3a-1c2fa51fdc28.png)
+
 
 6.	split the dataset into training and testing sets.
 ```
@@ -155,6 +160,8 @@ def plot_confusion_matrix(cm, classes, normalize = False, title = 'Confusion mat
 cm = metrics.confusion_matrix(y_test, y_pred)
 plot_confusion_matrix(cm, classes= ['FAKE', 'REAL'])
 ```
+![image](https://user-images.githubusercontent.com/10076889/219705946-4f529037-fa6a-4c4d-a051-21bc85fc1d29.png)
+
 
 ## Conclusions
 
